@@ -1,6 +1,6 @@
 <?php
 
-namespace Multicaret\Inbox\Http\Controllers;
+namespace Klongchu\Inbox\Http\Controllers;
 
 use Illuminate\Routing\Controller as BaseController;
 

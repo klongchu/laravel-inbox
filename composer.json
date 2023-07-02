@@ -1,5 +1,5 @@
 {
-  "name": "multicaret/laravel-inbox",
+  "name": "klongchu/laravel-inbox",
   "description": "Laravel messages and inbox system",
   "type": "library",
   "keywords": [
@@ -22,13 +22,13 @@
   },
   "autoload": {
     "psr-4": {
-      "Multicaret\\Inbox\\": "src/"
+      "Klongchu\\Inbox\\": "src/"
     }
   },
   "extra": {
     "laravel": {
       "providers": [
-        "Multicaret\\Inbox\\InboxServiceProvider"
+        "Klongchu\\Inbox\\InboxServiceProvider"
       ]
     }
   }

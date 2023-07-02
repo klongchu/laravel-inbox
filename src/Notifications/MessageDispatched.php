@@ -1,12 +1,12 @@
 <?php
 
-namespace Multicaret\Inbox\Notifications;
+namespace Klongchu\Inbox\Notifications;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Notifications\Messages\MailMessage;
 use Illuminate\Notifications\Notification;
-use Multicaret\Inbox\Models\Message;
-use Multicaret\Inbox\Models\Thread;
+use Klongchu\Inbox\Models\Message;
+use Klongchu\Inbox\Models\Thread;
 
 class MessageDispatched extends Notification
 {

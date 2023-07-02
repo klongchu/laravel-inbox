@@ -1,6 +1,6 @@
 <?php
 
-namespace Multicaret\Inbox;
+namespace Klongchu\Inbox;
 
 trait EventMap
 {

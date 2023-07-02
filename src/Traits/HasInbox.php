@@ -1,11 +1,11 @@
 <?php
 
-namespace Multicaret\Inbox\Traits;
+namespace Klongchu\Inbox\Traits;
 
 use Carbon\Carbon;
-use Multicaret\Inbox\Events\NewMessageDispatched;
-use Multicaret\Inbox\Events\NewReplyDispatched;
-use Multicaret\Inbox\Models\Thread;
+use Klongchu\Inbox\Events\NewMessageDispatched;
+use Klongchu\Inbox\Events\NewReplyDispatched;
+use Klongchu\Inbox\Models\Thread;
 
 trait HasInbox
 {

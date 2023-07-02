@@ -1,8 +1,8 @@
 <?php
 
-namespace Multicaret\Inbox\Listeners;
+namespace Klongchu\Inbox\Listeners;
 
-use Multicaret\Inbox\Notifications\MessageDispatched;
+use Klongchu\Inbox\Notifications\MessageDispatched;
 
 class SendNotification
 {

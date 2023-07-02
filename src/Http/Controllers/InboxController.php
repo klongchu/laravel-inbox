@@ -1,11 +1,11 @@
 <?php
 
-namespace Multicaret\Inbox\Http\Controllers;
+namespace Klongchu\Inbox\Http\Controllers;
 
 use Carbon\Carbon;
 use Illuminate\Http\Request;
-use Multicaret\Inbox\Models\Participant;
-use Multicaret\Inbox\Models\Thread;
+use Klongchu\Inbox\Models\Participant;
+use Klongchu\Inbox\Models\Thread;
 
 class InboxController extends Controller
 {

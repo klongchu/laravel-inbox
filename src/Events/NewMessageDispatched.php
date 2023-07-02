@@ -1,6 +1,6 @@
 <?php
 
-namespace Multicaret\Inbox\Events;
+namespace Klongchu\Inbox\Events;
 
 use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Queue\SerializesModels;

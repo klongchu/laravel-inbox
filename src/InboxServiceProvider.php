@@ -1,6 +1,6 @@
 <?php
 
-namespace Multicaret\Inbox;
+namespace Klongchu\Inbox;
 
 use Illuminate\Contracts\Events\Dispatcher;
 use Illuminate\Support\Facades\Route;
@@ -49,7 +49,7 @@ class InboxServiceProvider extends ServiceProvider
     {
         Route::group([
             'prefix' => config('inbox.route.prefix', 'inbox'),
-            'namespace' => 'Multicaret\Inbox\Http\Controllers',
+            'namespace' => 'Klongchu\Inbox\Http\Controllers',
             'middleware' => config('inbox.route.middleware', ['web', 'auth']),
             'as' => config('inbox.route.name')
         ], function () {
