@@ -43,9 +43,9 @@ return [
     */
 
     'models' => [
-        'thread' => Multicaret\Inbox\Models\Thread::class,
-        'message' => Multicaret\Inbox\Models\Message::class,
-        'participant' => Multicaret\Inbox\Models\Participant::class,
+        'thread' => Klongchu\Inbox\Models\Thread::class,
+        'message' => Klongchu\Inbox\Models\Message::class,
+        'participant' => Klongchu\Inbox\Models\Participant::class,
     ],
 
     /*

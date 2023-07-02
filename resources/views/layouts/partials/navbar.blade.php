@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light mb-5">
 	<div class="container-fluid">
-		<a class="navbar-brand" href="{{ route(config('inbox.route.name') . 'inbox.index') }}">Multicaret Inbox</a>
+		<a class="navbar-brand" href="{{ route(config('inbox.route.name') . 'inbox.index') }}">Klongchu Inbox</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"
 		        aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
@@ -24,8 +24,8 @@
 						<div class="dropdown-menu dropdown-menu-right">
 							@foreach(auth()->user()->notifications()->latest()->get() as $notification)
 								@php
-									$message = \Multicaret\Inbox\Models\Message::find($notification->data['message_id']);
-									$thread = \Multicaret\Inbox\Models\Thread::find($notification->data['thread_id']);
+									$message = \Klongchu\Inbox\Models\Message::find($notification->data['message_id']);
+									$thread = \Klongchu\Inbox\Models\Thread::find($notification->data['thread_id']);
 								@endphp
 								@if($thread && $message)
 									<a href="{{ route(config('inbox.route.name') . 'inbox.show', $thread) }}"
