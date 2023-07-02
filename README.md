@@ -13,7 +13,7 @@ Create an inbox system, in app messages, between users easily.
 This package can be installed through Composer.
 
 ``` bash
-composer require multicaret/laravel-inbox
+composer require klongchu/laravel-inbox
 ```
 
 If you don't use Laravel 5.5+ you have to add the service provider manually
@@ -22,7 +22,7 @@ If you don't use Laravel 5.5+ you have to add the service provider manually
 // config/app.php
 'providers' => [
     ...
-    Multicaret\Inbox\InboxServiceProvider::class,
+    Klongchu\Inbox\InboxServiceProvider::class,
     ...
 ];
 ```
@@ -30,7 +30,7 @@ If you don't use Laravel 5.5+ you have to add the service provider manually
 You can publish the config-file with:
 
 ``` bash
-php artisan vendor:publish --provider="Multicaret\Inbox\InboxServiceProvider" --tag="config"
+php artisan vendor:publish --provider="Klongchu\Inbox\InboxServiceProvider" --tag="config"
 ```
 
 This is the contents of the published config file:
@@ -82,9 +82,9 @@ return [
     */
 
     'models' => [
-        'thread' => Multicaret\Inbox\Models\Thread::class,
-        'message' => Multicaret\Inbox\Models\Message::class,
-        'participant' => Multicaret\Inbox\Models\Participant::class,
+        'thread' => Klongchu\Inbox\Models\Thread::class,
+        'message' => Klongchu\Inbox\Models\Message::class,
+        'participant' => Klongchu\Inbox\Models\Participant::class,
     ],
 
     /*
@@ -116,7 +116,7 @@ namespace App;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
-use Multicaret\Inbox\Traits\HasInbox;
+use Klongchu\Inbox\Traits\HasInbox;
 
 class User extends Authenticatable
 {
